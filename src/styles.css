@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+/* VARIABLES */
+:root{
+   /* --color-primario: #1b0aff; */
+   --color-primario:#061353;
+   /* --color-secundario: #1b0aff; */
+   --color-secundario: rgba(0, 33, 182, 0.991);
+    --color-backgroud-sombra: #E92F3D30;
+    --color-background: #f1eff65f;
+    --color-texto: #A1A5A6;
+    --text-defaul: 'Open Sans';
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: var(--text-defaul);
+}
+
+
+html{
+   scroll-behavior: smooth;
+}
+
+body{
+   background: var(--color-background);
+}
+
+.titulos{
+   font-size: 40px;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 600;
+}
+
+.subtitulos{
+   font-size: 25px;
+   font-weight: 400;
+   text-align: center;
+   text-transform: uppercase;
+   color: var(--color-primario);
+}
+
+.btn{
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 14px;
+   color: #FFF;
+   background: var(--color-secundario);
+   font-weight: 700;
+   padding: 15px 30px;
+   outline: none;
+   border: 2px solid var(--color-primario);
+   cursor: pointer;
+   position: relative;
+   top: 20px;
+   transition: all 0.3s;
+}
+
+.btn span{
+   padding-left: 10px;
+}
+
+.btn:hover{
+   padding: 15px 45px;
+}
+

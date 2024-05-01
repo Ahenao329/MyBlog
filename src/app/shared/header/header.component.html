@@ -1,0 +1,34 @@
+     <!-- MENU PRINCIPAL -->
+     <div class="menu-principal">
+        <div class="logo" id="logo" (click)="scrollToTop()">
+             <img src="../../../assets/img/Untitled.png" alt="Logo">
+        </div>
+
+        <div class="menu-bar" #menuBar>
+             <i class="fas fa-angle-right" #btnMenuClose></i>
+
+             <nav class="enlaces" #enlaces>
+                  <ul>
+                       <li><a href="#proyectos">Proyectos</a></li>
+                       <li><a href="#aboutme">Sobre mi</a></li> 
+                       <li><a href="#ingredientes">Certificados</a></li> 
+                       <li><a href="#contacto">Contacto</a></li> 
+                         <!-- <li><a routerLink="servicios">Equipo</a></li> 
+                         <li ><a routerLink="/servicios">Servicios</a></li>
+                         <li ><a routerLink="/equipo">Equipo</a></li>
+                         <li ><a routerLink="/ingredientes">ingredientes</a></li>
+                         <li ><a routerLink="/contactanos">Contacto</a></li>
+                         <a routerLink="/servicios">Equipo</a> -->
+
+                  </ul>
+             </nav>
+
+             <div class="sociales">
+               <a href="#"><span class="fab fa-facebook"></span></a>
+               <a href="#"><span class="fab fa-instagram"></span></a>
+               <a href="#"><span class="fab fa-twitter"></span></a>
+               <a href="#"><span class="fab fa-youtube"></span></a>
+             </div>
+        </div>
+        <i class="fas fa-bars" #btnMenuOpen></i>
+   </div>

@@ -1,0 +1,252 @@
+#proyectos{
+    height: 100vh;
+    /* background: #FFF; */
+    background-color: #f1eff6eb;
+    padding: 40px;
+}
+
+.proyectos-tiulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proyectos-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 30px;
+    grid-template-areas:     "ingredientes  imagen    rapidez"
+                             "calidad       imagen    delivery";
+}
+
+.calidad{
+    grid-row: calidad;
+    grid-column: calidad;
+}
+
+.ingredientes{
+    grid-row: ingredientes;
+    grid-column: ingredientes;
+}
+
+.rapidez{
+    grid-row: rapidez;
+    grid-column: rapidez;
+}
+
+.delivery{
+    grid-row: delivery;
+    grid-column: delivery;
+}
+
+.imagen-central{
+    grid-row: imagen;
+    grid-column: imagen;
+    transition: all 0.5s;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.imagen-central:hover{
+    transform: scale(1.1);
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items span{
+    width: 95px;
+    font-size: 40px;
+    color: var(--color-secundario);
+    padding: 20px;
+    border: 5px double #dedede;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.items span:hover{
+    background: var(--color-secundario);
+    color: #FFF;
+}
+
+.ingredientes span, 
+.calidad span{
+    color: var(--color-primario);
+}
+
+.ingredientes span:hover, 
+.calidad span:hover{
+    background: var(--color-primario);
+    color: #FFF;
+}
+
+.items .titulo-item{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.items .texto-item{
+    font-size: 14px;
+    color: var(--color-texto);
+    text-align: center;
+    font-style: italic;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 850px){
+
+    .proyectos-container{
+         margin-top: 50px;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-areas:     "ingredientes  rapidez"
+                                  "calidad       delivery";
+    }
+    
+     .imagen-central{
+          display: none;
+     }
+}
+
+
+
+/* 
+#proyectos{
+    height: 100vh;
+    background: #FFF;
+    padding: 40px;
+}
+
+.proyectos-tiulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proyectos-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 30px;
+    grid-template-areas:     "ingredientes  imagen    rapidez"
+                             "calidad       imagen    delivery";
+}
+
+.calidad{
+    grid-row: calidad;
+    grid-column: calidad;
+}
+
+.ingredientes{
+    grid-row: ingredientes;
+    grid-column: ingredientes;
+}
+
+.rapidez{
+    grid-row: rapidez;
+    grid-column: rapidez;
+}
+
+.delivery{
+    grid-row: delivery;
+    grid-column: delivery;
+}
+
+.imagen-central{
+    grid-row: imagen;
+    grid-column: imagen;
+    transition: all 0.5s;
+}
+
+.imagen-central:hover{
+    transform: scale(1.1);
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items span{
+    width: 95px;
+    font-size: 40px;
+    color: var(--color-secundario);
+    padding: 20px;
+    border: 5px double #dedede;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.items span:hover{
+    background: var(--color-secundario);
+    color: #FFF;
+}
+
+.ingredientes span, 
+.calidad span{
+    color: var(--color-primario);
+}
+
+.ingredientes span:hover, 
+.calidad span:hover{
+    background: var(--color-primario);
+    color: #FFF;
+}
+
+.items .titulo-item{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.items .texto-item{
+    font-size: 14px;
+    color: var(--color-texto);
+    text-align: center;
+    font-style: italic;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 850px){
+
+    .proyectos-container{
+         margin-top: 50px;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-areas:     "ingredientes  rapidez"
+                                  "calidad       delivery";
+    }
+    
+     .imagen-central{
+          display: none;
+     }
+} */
+
+.imagen-contenedor {
+    max-width: 100%; /* Para asegurar que el contenedor no sea más ancho que su columna */
+    max-height: 100%; /* Para asegurar que el contenedor no sea más alto que su columna */
+    height: 200px; /* Altura fija para el contenedor de la imagen */
+    display: flex; /* Para centrar verticalmente la imagen */
+    justify-content: center; /* Para centrar horizontalmente la imagen */
+    align-items: center; /* Para centrar verticalmente la imagen */
+}
+.imagen-contenedor img {
+    max-height: 100%; /* La imagen no será más alta que su contenedor */
+    width: auto; /* La imagen se ajustará automáticamente para mantener su relación de aspecto */
+    height: auto; /* La imagen se ajustará automáticamente para mantener su relación de aspecto */
+}
