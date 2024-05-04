@@ -1,9 +1,8 @@
-
-
 /* SLIDER DE technologies */
 .contenedor-principal{
     display: flex;
     align-items: center;
+    justify-content: center;
     z-index: 0;
 }
 
@@ -17,7 +16,7 @@
     background: transparent;
     cursor: pointer;
     font-size: 40px;
-    margin: 0 15px;
+    margin: 0 5px;
     color: var(--color-secundario);
     z-index: 500;
     outline: none;
@@ -44,7 +43,9 @@
     overflow: hidden;
     height: calc(100vh - 80px);
     scroll-behavior: smooth;
-} 
+    height: 70vh; /*todo: como es mejor??*/
+
+}
 
 .container-technologies{
     justify-content: center;
@@ -54,50 +55,32 @@
 }
 
 .imagen-technologies img {
+    max-width: 100%;
+    max-height: 100%;
     width: 200vh;
-    height: 80vh;
     transform: scale(1.1);
     transition: all 0.3s;
-
+    height: 100%;
 }
 
-/* .container-technologies:hover .imagen-technologies img{
-    transform: scale(1.15);
-} */
-
-@media screen and (max-width: 850px){
-    /* SLIDER technologies */
-    .container-technologies{
-         flex-direction: column;
-    }
-
-    .descripcion-technologies{
-         width: 70%;
-         order: 1;
-    }
-
-    .descripcion-technologies .btn{
-         padding: 10px 20px;
-    }
-
-    .descripcion-technologies .btn:hover{
-         padding: 10px 30px;
-    }
+.imagen-technologies {
+    height: calc(100vh - 50%); /* Reduce 350px desde la altura total */
 }
 
 @media screen and (max-width: 650px){
-    .slider{
-        height: calc(100vh - 0px);
+    .imagen-technologies img {
+        height: 80vh;
+        margin-top: 65px; 
+        /* margin-top: 20%;  */
     }
-    .imagen-technologies{
-        width: 65%;
-    }
-
-    .descripcion-technologies h1{
-        font-size: 7vw;
+    .imagen-technologies {
+        height: calc(100vh - 250px); /* Reduce 350px desde la altura total */
     }
 
-    .descripcion-technologies h2{
-        font-size: 3vw;
+    .contenedor-principal #btnizquierda,
+    .contenedor-principal #btnderecha{
+        margin-top: 65px; 
     }
 }
+
+

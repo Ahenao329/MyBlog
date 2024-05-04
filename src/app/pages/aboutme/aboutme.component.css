@@ -28,6 +28,7 @@
 }
 
 .persona-info{
+    top: 20%;
     position: absolute;
     bottom: 10px;
     width: 100%;
@@ -44,7 +45,7 @@
 }
 
 .persona-info h2{
-    font-size: 30px;
+    font-size: 20px;
     color: #000;
     font-weight: 600;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
@@ -53,7 +54,7 @@
 
 .persona-info p{
     color: var(--color-secundario);
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 700;
     font-style: italic;
     margin-top: 8px;
@@ -112,5 +113,78 @@
     transition: all 0.5s ease; /* Agregamos una transición suave para la imagen cuando no está en estado hover */
 }
 
+.persona:hover .persona-info {
+    width: 50%;
+    left: 40%
+    
+
+}
+
+@media screen and (max-width: 850px) {
+
+.persona:hover .persona-imagen {
+    display:none;
+    transition: all 0.5 s;
+}
+
+.persona:hover .persona-info {
+    align-items: center;
+    align-content: center;
+    max-width: 70%;
+    max-width: 90%;
+    min-height: auto; 
+    width: 80%; 
+    left: 10%;
+    top: 1%;
+}
+    
+}
+
+
+
+@media screen and (max-width: 650px) {
+
+    .persona-info h2{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    
+    .persona-info p{
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 4px;
+        margin-bottom: 15px;
+    }
+    
+    .social-media a{
+        display: inline-block;
+        width: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        margin: 0 5px;
+        font-size: 18px;
+        transition: all 0.5s;
+    
+    }
+    
+.persona:hover .persona-imagen {
+    display:none;
+    transition: all 0.5 s;
+
+}
+
+.persona:hover .persona-info {
+    align-items: center;
+    align-content: center;
+    max-width: 90%;
+    max-width: 90%;
+    min-height: auto; 
+    width: 85%; 
+    left: 10%;
+    top: 1%;
+}
+    
+}
 
 

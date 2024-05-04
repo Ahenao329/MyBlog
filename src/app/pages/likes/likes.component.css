@@ -1,24 +1,24 @@
-#ingredientes{
+#certificados{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.ingre{
+.certi{
     flex-grow: 1;
     overflow: hidden;
     position: relative;
     height: 250px;
 }
 
-.imagen-ingre{
+.imagen-certi{
     position: absolute;
     height: 100%;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.info-ingre{
+.info-certi{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -26,32 +26,45 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    /* background: rgba(0, 0, 0, 0.5); */
-    /* background: var(--color-primario); */
     background: rgba(0, 33, 182, 0.2);
-    /* background: rgba(0, 33, 182, 0.1); */
-    /* background: rgba(0, 33, 182, 0.991); */
     transition: all 0.3s;
 }
 
-.info-ingre p{
+.info-certi p{
     font-size: 28px;
     color: #fff;
     font-weight: 600;
     transition: all 0.3s;
 }
 
-.info-ingre:hover{
+.info-certi:hover{
     background: rgba(0,0,0,0.25);
 }
 
-.info-ingre:hover p{
+.info-certi:hover p{
     transform: translateY(10px);
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 1300px){
+    #certificados {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias líneas */
+    }
+    
+    .certi {
+        flex-basis: 50%; /* Los elementos ocupan el 50% del ancho en pantallas grandes */
+        max-width: 50%; /* Limitar el ancho máximo para que no se desborde en pantallas pequeñas */
+        overflow: hidden;
+        position: relative;
+        height: 250px;
+    }
+}
 
-    .info-ingre .txt-ingre{
-        display: none;
+@media screen and (max-width: 849px) {
+    .certi {
+        flex-basis: 100%; /* Los elementos ocupan el 100% del ancho en pantallas pequeñas */
+        max-width: 100%; /* Eliminar el límite de ancho máximo */
     }
 }

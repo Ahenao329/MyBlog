@@ -11,8 +11,6 @@ export class TechnologiesComponent implements AfterViewInit {
   @ViewChild('btnderecha') btnDerecho!: ElementRef;
   
   ngAfterViewInit(): void {
-    // Iniciar el intervalo para cambiar las imágenes cada 15 segundos
-    // this.iniciarIntervalo();
 
     // Detener el intervalo cuando el mouse entra al área del slider
     this.contenedor.nativeElement.addEventListener('mouseenter', () => {

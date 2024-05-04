@@ -1,6 +1,7 @@
 footer{
     display: flex;
     margin-top: -100px;
+    align-items: center;
 }
 
 .sociales-metodo{
@@ -62,5 +63,10 @@ footer{
     }
     .sociales-metodo{
         width: 50%;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        margin-top: 0px;
     }
 }

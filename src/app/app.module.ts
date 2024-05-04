@@ -11,6 +11,8 @@ import { AboutmeComponent } from './pages/aboutme/aboutme.component';
 import { LikesComponent } from './pages/likes/likes.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { TechnologiesComponent } from './pages/technologies/technologies.component';
+import { NopagefoundComponent } from './nopagefound/nopagefound/nopagefound.component';
+import { HomeComponent } from './home/home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { TechnologiesComponent } from './pages/technologies/technologies.compone
     LikesComponent,
     ContactComponent,
     TechnologiesComponent,
+    NopagefoundComponent,
+    HomeComponent,
     
   ],
   imports: [
