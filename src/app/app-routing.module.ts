@@ -4,10 +4,8 @@ import { NopagefoundComponent } from './nopagefound/nopagefound/nopagefound.comp
 import { HomeComponent } from './home/home/home.component';
 
 const routes: Routes = [
-  // { pathMatch: 'full'},
     { path: '', component: HomeComponent, pathMatch: 'full' }, // Ruta para la página principal (AppComponent)
-{path: '**', component: NopagefoundComponent},
-  // {path: 'nopagefound', component: NopagefoundComponent}
+    {path: '**', component: NopagefoundComponent},
 ];
 
 @NgModule({

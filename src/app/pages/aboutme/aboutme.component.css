@@ -120,6 +120,37 @@
 
 }
 
+@media screen and (max-width: 1250px) {
+
+    .persona:hover .persona-info {
+        max-width: 70%;
+        max-width: 90%;
+        width: 55%;
+        top: 5%;
+    }
+        
+    }
+
+@media screen and (max-width: 950px) {
+
+.persona:hover .persona-imagen {
+    display:none;
+    transition: all 0.5 s;
+}
+
+.persona:hover .persona-info {
+    align-items: center;
+    align-content: center;
+    max-width: 70%;
+    max-width: 90%;
+    min-height: auto; 
+    width: 80%; 
+    left: 10%;
+    top: 20%;
+}
+    
+}
+
 @media screen and (max-width: 850px) {
 
 .persona:hover .persona-imagen {
@@ -135,7 +166,7 @@
     min-height: auto; 
     width: 80%; 
     left: 10%;
-    top: 1%;
+    top: 5%;
 }
     
 }

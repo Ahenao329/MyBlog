@@ -13,6 +13,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { TechnologiesComponent } from './pages/technologies/technologies.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound/nopagefound.component';
 import { HomeComponent } from './home/home/home.component';
+import { WhatsappComponent } from './shared/whatsapp/whatsapp.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { HomeComponent } from './home/home/home.component';
     TechnologiesComponent,
     NopagefoundComponent,
     HomeComponent,
+    WhatsappComponent,
     
   ],
   imports: [

@@ -75,7 +75,8 @@
     color: var(--color-secundario);
 }
 
-@media screen and (max-width: 650px){
+
+@media screen and (max-width: 950px){
     /* MENU PRINCIPAL */
     .menu-principal{
          position: fixed;
