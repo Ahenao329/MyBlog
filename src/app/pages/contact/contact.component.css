@@ -131,9 +131,9 @@
        margin-top: -35px;
    }
 
-   .subtitulos {
+   /* .subtitulos {
        display: none;
-   }
+   } */
 
 
 }
@@ -164,10 +164,10 @@
         justify-content: flex-end;
         margin-top: -35px;
     }
-
+/* 
     .subtitulos {
         display: none;
-    }
+    } */
 
 
 }
