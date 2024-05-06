@@ -4,29 +4,35 @@
          <h1 class="titulos">Contáctame</h1>
     </div>
 
-    <form action="" id="formulario">
+     <form (submit)="sendMessage($event)" id="formulario">
          <div class="two-fiels">
               <div class="inputConIcon">
-                   <input type="text" id="nombre" name="nombre" class="input-text" placeholder="Nombre">
-                   <i class="fas fa-user"></i>
+                    <input type="text" id="nombre" name="nombre" class="input-text" placeholder="Nombre" #name>
+                    <i class="fas fa-user"></i>
               </div>
 
               <div class="inputConIcon">
-                   <input type="email" id="email" name="email" class="input-email" placeholder="Email">
-                   <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" name="email" class="input-email" placeholder="Email" #email>
+                    <i class="fas fa-envelope"></i>
               </div>
          </div>
 
 
          <div class="fiels">
               <div class="inputConIcon textareaIcon">
-                   <textarea name="comentarios" id="comentarios" class="textarea" placeholder="Ingrese su mensaje"></textarea>
+                    <textarea name="comentarios" id="comentarios" class="textarea" placeholder="Ingrese su mensaje" #message></textarea>
                    <i class="fas fa-comments"></i>
               </div>
          </div>
 
          <div class="fiels-btn">
-              <input type="submit" class="btn btn-input" value="Enviar">
+              <input type="submit" class="btn btn-input" value="Enviar" [disabled]="loading() || success()">
          </div>
+         @if(loading()){
+          <p>Enviando Mensaje</p>
+         }
+         @else if (success() === false) {
+          <p> Error enviando mensaje </p>
+         }
     </form>
 </section>

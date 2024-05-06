@@ -14,6 +14,7 @@ import { TechnologiesComponent } from './pages/technologies/technologies.compone
 import { NopagefoundComponent } from './nopagefound/nopagefound/nopagefound.component';
 import { HomeComponent } from './home/home/home.component';
 import { WhatsappComponent } from './shared/whatsapp/whatsapp.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { WhatsappComponent } from './shared/whatsapp/whatsapp.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
