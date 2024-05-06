@@ -178,19 +178,12 @@ SLIDER DE technologies
 
 @media screen and (max-width: 650px) {
   .imagen-technologies img {
-    height: 80vh;
-    margin-top: 65px;
+    height: 50vh;
+    margin-top: 100px;
+    /* padding-top: -100px; */
   }
   .imagen-technologies {
     height: calc(100vh - 250px);
   }
 }
 
-.slider.transitioning {
-    transition: transform 0.5s ease; /* Transición predeterminada de 0.5 segundos */
-  }
-  
-  .slider.transitioning.instant {
-    transition: transform 1s ease; /* Transición especial de 1 segundo */
-  }
-  

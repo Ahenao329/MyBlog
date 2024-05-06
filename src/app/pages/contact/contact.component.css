@@ -104,15 +104,46 @@
     padding: 15px 65px;
 }
 
+@media screen and (max-width: 850px){
 
+    #formulario{
+    margin-top: -10px;
+       align-items: center;
+       width: 90%;
+    }
+
+    .two-fiels{
+         flex-direction: column;
+    }
+
+    .inputConIcon{
+         width: 100%;
+    }
+
+    .titulos {
+       padding-bottom: 15px;
+    }
+
+    .fiels-btn{
+       width: 100%;
+       display: flex;
+       justify-content: flex-end;
+       margin-top: -35px;
+   }
+
+   .subtitulos {
+       display: none;
+   }
+
+
+}
 
 @media screen and (max-width: 650px){
 
-     /* #formulario{
-        margin-top: -50px;
-        margin: -15px;
-        height: 100vh;
-          width: 100%;
+     #formulario{
+        margin-top: -10px;
+        align-items: center;
+        width: 100%;
      }
 
      .two-fiels{
@@ -135,8 +166,8 @@
     }
 
     .subtitulos {
-        margin-top: -30px
-    } */
+        display: none;
+    }
 
 
 }
