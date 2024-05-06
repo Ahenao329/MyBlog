@@ -38,7 +38,7 @@ export class TechnologiesComponent implements OnInit {
             slider.scrollLeft -= slideWidth * 1;
           }
           canScroll = false;
-          const delay = (this.screenWidth > 800) ? 800 : 400;
+          const delay = (this.screenWidth > 800) ? 800 : 500;
           setTimeout(enableScroll, delay);
           this.resetAutoScrollTimer();
         }
@@ -52,7 +52,7 @@ export class TechnologiesComponent implements OnInit {
             slider.scrollLeft += slideWidth * 1;
           }
           canScroll = false;
-          const delay = (this.screenWidth > 800) ? 800 : 400;
+          const delay = (this.screenWidth > 800) ? 800 : 500;
           setTimeout(enableScroll, delay);
           this.resetAutoScrollTimer();
         }

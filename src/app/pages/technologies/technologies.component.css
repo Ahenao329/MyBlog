@@ -1,9 +1,13 @@
 SLIDER DE technologies
+body{
+  background-color: #f1eff6eb;
+}
 .contenedor-principal{
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 0;
+    background-color: #f1eff6eb;
 }
 
 
@@ -26,7 +30,7 @@ SLIDER DE technologies
 .contenedor-principal #btnizquierda:hover,
 .contenedor-principal #btnderecha:hover{
     background: var(--color-backgroud-sombra);
-    transform: translateY(5px);
+    transform: translateY(20px);
 }
 
 
@@ -67,38 +71,8 @@ SLIDER DE technologies
     height: calc(100vh - 50%); 
 }
 
-@media screen and (max-width: 950px){
-    .imagen-technologies img {
-        height: 80vh;
-        margin-top: 65px; 
-        /* margin-top: 20%;  */
-    }
-    .imagen-technologies {
-        height: calc(100vh - 250px); 
-    }
 
-    .contenedor-principal #btnizquierda,
-    .contenedor-principal #btnderecha{
-        margin-top: 65px; 
-    }
-}
-
-
-
-@media screen and (max-width: 650px){
-    .imagen-technologies img {
-        height: 80vh;
-        margin-top: 65px; 
-    }
-    .imagen-technologies {
-        height: calc(100vh - 250px); 
-    }
-
-    .contenedor-principal #btnizquierda,
-    .contenedor-principal #btnderecha{
-        margin-top: 65px; 
-    }
-}
+/**/
 
 
 .contenedor-principal {
@@ -172,18 +146,29 @@ SLIDER DE technologies
     margin-top: 65px;
   }
   .imagen-technologies {
-    height: calc(100vh - 250px);
+    height: calc(100vh - 290px);
+  }
+  .contenedor-principal #btnizquierda,
+  .contenedor-principal #btnderecha{
+      margin-top: 65px; 
   }
 }
 
 @media screen and (max-width: 650px) {
   .imagen-technologies img {
-    height: 60vh;
+    height: 50vh;
     margin-top: 100px;
-    /* padding-top: -100px; */
+    padding-top: -100px;
   }
   .imagen-technologies {
-    height: calc(100vh - 350px);
+    height: calc(100vh - 250px);
+  }
+
+  .contenedor-principal #btnizquierda,
+  .contenedor-principal #btnderecha{
+      margin-top: 80px; 
   }
 }
+
+
 
