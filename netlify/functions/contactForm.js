@@ -34,7 +34,7 @@
 
 
 // function generarCuerpoMensaje(params) {
-// return `Formulario de contacto enviado por ${params.nombre} - ${params.email}.
+// return `Formulario de contacto enviado por ${params.name} - ${params.email}.
 // El mensaje es el siguiente:
 // ${params.mensaje}
 // `;
@@ -58,7 +58,6 @@
 //             }
 //     }
 // }
-
 
 
 const { config } = require("dotenv");
@@ -96,9 +95,9 @@ function enviarMail(mail) {
 }
 
 function generarCuerpoMensaje(params) {
-  return `Formulario de contacto enviado por ${params.nombre} - ${params.email}.
+  return `Formulario de contacto enviado por ${params.name} - ${params.email}.
 El mensaje es el siguiente:
-${params.mensaje}
+${params.message}
 `;
 }
 
@@ -116,7 +115,7 @@ exports.handler = async (event, context) => {
     default:
       return {
         statusCode: 405,
-        message: "Método no soportado",
+        body: "Método no soportado",
       };
   }
 };
