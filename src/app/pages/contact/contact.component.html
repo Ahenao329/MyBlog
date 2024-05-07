@@ -4,29 +4,29 @@
          <h1 class="titulos">Contáctame</h1>
     </div>
 
-     <form (submit)="sendMessage($event)" id="formulario">
+     <form (submit)="sendMessage($event)" id="formulario" #ngform="ngForm">
          <div class="two-fiels">
               <div class="inputConIcon">
-                    <input type="text" id="nombre" name="nombre" class="input-text" placeholder="Nombre" #name>
+                    <input type="text" name="name" id="name" class="input-text" placeholder="Nombre" #nombre="ngModel" [(ngModel)]="form.name" required="true" minlength="3" autocomplete="name">
                     <i class="fas fa-user"></i>
               </div>
 
               <div class="inputConIcon">
-                    <input type="email" id="email" name="email" class="input-email" placeholder="Email" #email>
-                    <i class="fas fa-envelope"></i>
+               <input type="email" class="input-email" name="email" id="email" placeholder="Correo electrónico"  #email="ngModel" [(ngModel)]="form.email"  required="true" autocomplete="email">
+               <i class="fas fa-envelope"></i>
               </div>
          </div>
 
 
          <div class="fiels">
               <div class="inputConIcon textareaIcon">
-                    <textarea name="comentarios" id="comentarios" class="textarea" placeholder="Ingrese su mensaje" #message></textarea>
+               <textarea class="textarea" name="message" id="message" cols="30" rows="6" placeholder="Mensaje"  #message="ngModel" [(ngModel)]="form.message"  required="true" minlength="15" autocomplete="off"></textarea>
                    <i class="fas fa-comments"></i>
               </div>
          </div>
 
          <div class="fiels-btn">
-              <input type="submit" class="btn btn-input" value="Enviar" [disabled]="loading() || success()">
+              <button class="btn btn-input" type="submit" [disabled]="loading() || success() || ngform.invalid">Enviar mensaje</button>
          </div>
          @if(loading()){
           <p>Enviando Mensaje</p>
