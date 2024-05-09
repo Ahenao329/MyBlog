@@ -10,15 +10,12 @@
     align-items: center;
     flex-direction: column;
     top: 50%;
-
-    
 }
 
 .imagen-central:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
-
 
 .items span {
     width: 95px;

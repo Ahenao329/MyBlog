@@ -1,4 +1,3 @@
-
 #contacto{
     height: 100vh;
     padding: 60px;
@@ -54,7 +53,6 @@
     transition: all 0.5s;
 }
 
-
 .textareaIcon{
     width: 100%;
 }
@@ -74,7 +72,6 @@
     border: 1px solid var(--color-primario);
 }
 
-
 .inputConIcon input:focus + i{
     background: var(--color-primario);
 }
@@ -82,7 +79,6 @@
 .inputConIcon textarea:focus + i{
     color: var(--color-primario);
 }
-
 
 .fiels-btn{
     width: 100%;
@@ -105,7 +101,6 @@
 }
 
 @media screen and (max-width: 850px){
-
     #formulario{
     margin-top: -10px;
        align-items: center;
@@ -130,17 +125,10 @@
        justify-content: flex-end;
        margin-top: -35px;
    }
-
-   /* .subtitulos {
-       display: none;
-   } */
-
-
 }
 
 @media screen and (max-width: 650px){
-
-     #formulario{
+    #formulario{
         margin-top: -10px;
         align-items: center;
         width: 100%;
@@ -164,10 +152,4 @@
         justify-content: flex-end;
         margin-top: -35px;
     }
-/* 
-    .subtitulos {
-        display: none;
-    } */
-
-
 }

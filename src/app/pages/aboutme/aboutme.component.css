@@ -8,7 +8,6 @@
     overflow: hidden;
     position: relative;
     transition: all 0.5s;
-
 }
 
 .persona:hover{
@@ -37,7 +36,6 @@
     transition: all 0.1s;
 }
 
-
 .persona:hover .persona-info{
     opacity: 1;
     bottom: 60px;
@@ -51,19 +49,16 @@
     text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
-
 .persona-info p{
-    color: var(--color-secundario);
+    color: #020202; /* Cambia el color del texto a un tono más oscuro */
     font-size: 17px;
     font-weight: 700;
     font-style: italic;
     margin-top: 8px;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 3px rgba(0, 8, 255, 0.5);
-    /* text-shadow: 2px 2px 3px rgba(182, 176, 176, 0.5); */
+    text-shadow: 2px 2px 3px rgba(62, 69, 255, 0.5);
     transition: opacity 0.5s ease, bottom 0.5s ease;
-
-}
+} 
 
 .social-media a{
     display: inline-block;
@@ -80,18 +75,11 @@
 
 }
 
-
 .social-media a:hover{
     color: var(--color-secundario);
     background: transparent;
     transform: scale(2);
 }
-
-/* .persona:hover .persona-imagen {
-    transition: all 0.5s;
-    display: none;
-
-} */
 
 .persona:hover .persona-info {
     opacity: 1; 
@@ -103,78 +91,65 @@
     left: 20%
 }
 
-
 .persona-info {
     transition: opacity 0.5s ease, bottom 0.5s ease;
-
 }
 
 .persona .persona-imagen {
-    transition: all 0.5s ease; /* Agregamos una transición suave para la imagen cuando no está en estado hover */
+    transition: all 0.5s ease;
 }
 
 .persona:hover .persona-info {
     width: 50%;
     left: 40%
-    
-
 }
 
 @media screen and (max-width: 1250px) {
-
     .persona:hover .persona-info {
         max-width: 70%;
         max-width: 90%;
         width: 55%;
         top: 5%;
     }
-        
-    }
+}
 
 @media screen and (max-width: 950px) {
+    .persona:hover .persona-imagen {
+        display:none;
+        transition: all 0.5 s;
+    }
 
-.persona:hover .persona-imagen {
-    display:none;
-    transition: all 0.5 s;
-}
-
-.persona:hover .persona-info {
-    align-items: center;
-    align-content: center;
-    max-width: 70%;
-    max-width: 90%;
-    min-height: auto; 
-    width: 80%; 
-    left: 10%;
-    top: 20%;
-}
-    
+    .persona:hover .persona-info {
+        align-items: center;
+        align-content: center;
+        max-width: 70%;
+        max-width: 90%;
+        min-height: auto; 
+        width: 80%; 
+        left: 10%;
+        top: 20%;
+    }
 }
 
 @media screen and (max-width: 850px) {
+    .persona:hover .persona-imagen {
+        display:none;
+        transition: all 0.5 s;
+    }
 
-.persona:hover .persona-imagen {
-    display:none;
-    transition: all 0.5 s;
+    .persona:hover .persona-info {
+        align-items: center;
+        align-content: center;
+        max-width: 70%;
+        max-width: 90%;
+        min-height: auto; 
+        width: 80%; 
+        left: 10%;
+        top: 5%;
+    }
 }
-
-.persona:hover .persona-info {
-    align-items: center;
-    align-content: center;
-    max-width: 70%;
-    max-width: 90%;
-    min-height: auto; 
-    width: 80%; 
-    left: 10%;
-    top: 5%;
-}
-    
-}
-
-
 
 @media screen and (max-width: 650px) {
-
     .persona-info h2{
         font-size: 20px;
         font-weight: 500;
@@ -199,23 +174,22 @@
     
     }
     
-.persona:hover .persona-imagen {
-    display:none;
-    transition: all 0.5 s;
+    .persona:hover .persona-imagen {
+        display:none;
+        transition: all 0.5 s;
 
-}
+    }
 
-.persona:hover .persona-info {
-    align-items: center;
-    align-content: center;
-    max-width: 90%;
-    max-width: 90%;
-    min-height: auto; 
-    width: 85%; 
-    left: 10%;
-    top: 1%;
-}
-    
+    .persona:hover .persona-info {
+        align-items: center;
+        align-content: center;
+        max-width: 90%;
+        max-width: 90%;
+        min-height: auto; 
+        width: 85%; 
+        left: 10%;
+        top: 1%;
+    }
 }
 
 

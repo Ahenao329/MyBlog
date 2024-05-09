@@ -1,85 +1,14 @@
-SLIDER DE technologies
+/* Estilos CSS del slider de tecnologías */
 body{
   background-color: #f1eff6eb;
 }
+
 .contenedor-principal{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
-    background-color: #f1eff6eb;
-}
-
-
-.contenedor-principal #btnizquierda,
-.contenedor-principal #btnderecha{
-    position: absolute;
-    height: 10%;
-    width: 50px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    font-size: 40px;
-    margin: 0 5px;
-    color: var(--color-secundario);
-    z-index: 500;
-    outline: none;
-    transition: all 0.3s;
-}
-
-.contenedor-principal #btnizquierda:hover,
-.contenedor-principal #btnderecha:hover{
-    background: var(--color-backgroud-sombra);
-    transform: translateY(20px);
-}
-
-
-.contenedor-principal #btnizquierda{
-    left: 0;
-}
-
-.contenedor-principal #btnderecha{
-    right: 0;
-}
-
- .slider {
-    display: flex;
-    overflow: hidden;
-    height: calc(100vh - 80px);
-    scroll-behavior: smooth;
-    height: 70vh; /*todo: como es mejor??*/
-
-}
-
-.container-technologies{
-    justify-content: center;
-    align-items: center;
-    flex-basis: 100%;
-    flex-shrink: 0;
-}
-
-.imagen-technologies img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 200vh;
-    transform: scale(1.1);
-    transition: all 0.3s;
-    height: 100%;
-}
-
-.imagen-technologies {
-    height: calc(100vh - 50%); 
-}
-
-
-/**/
-
-
-.contenedor-principal {
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 0;
+  background-color: #f1eff6eb;
 }
 
 .contenedor-principal #btnizquierda,
@@ -166,9 +95,6 @@ body{
 
   .contenedor-principal #btnizquierda,
   .contenedor-principal #btnderecha{
-      margin-top: 80px; 
+      margin-top: 50px; 
   }
 }
-
-
-

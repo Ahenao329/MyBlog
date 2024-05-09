@@ -10,7 +10,7 @@ export class TechnologiesComponent implements OnInit {
   
   screenWidth: number = 0;
   intervalo: any;
-  startAutoScroll!: () => void; // Declaración de la propiedad startAutoScroll
+  startAutoScroll!: () => void;
 
   constructor(private renderer: Renderer2, private elementRef: ElementRef, @Inject(PLATFORM_ID) private platformId: Object) { }
 
@@ -23,7 +23,7 @@ export class TechnologiesComponent implements OnInit {
       let canScroll = true;
 
       setTimeout(() => {
-        this.startAutoScroll(); // Inicia el desplazamiento automático después de 5 segundos
+        this.startAutoScroll();
       }, 1000);
 
       const enableScroll = () => {
@@ -87,7 +87,7 @@ export class TechnologiesComponent implements OnInit {
         this.resetAutoScrollTimer();
       });
 
-      this.startAutoScroll = startAutoScroll; // Asignación de la función startAutoScroll
+      this.startAutoScroll = startAutoScroll;
     }
   }
 

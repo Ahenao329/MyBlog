@@ -6,6 +6,5 @@ import { Component, HostListener  } from '@angular/core';
   styleUrls: ['./footrer.component.css']
 })
 export class FootrerComponent {
-
-
+  currentYear: number = new Date().getFullYear();
 }

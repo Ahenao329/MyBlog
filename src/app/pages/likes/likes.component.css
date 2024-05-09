@@ -50,12 +50,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias líneas */
+        flex-wrap: wrap;
     }
     
     .certi {
-        flex-basis: 50%; /* Los elementos ocupan el 50% del ancho en pantallas grandes */
-        max-width: 50%; /* Limitar el ancho máximo para que no se desborde en pantallas pequeñas */
+        flex-basis: 50%;
+        max-width: 50%;
         overflow: hidden;
         position: relative;
         height: 250px;
@@ -64,7 +64,7 @@
 
 @media screen and (max-width: 849px) {
     .certi {
-        flex-basis: 100%; /* Los elementos ocupan el 100% del ancho en pantallas pequeñas */
-        max-width: 100%; /* Eliminar el límite de ancho máximo */
+        flex-basis: 100%;
+        max-width: 100%;
     }
 }
