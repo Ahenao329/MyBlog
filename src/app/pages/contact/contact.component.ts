@@ -29,5 +29,5 @@ export class ContactComponent {
     this.loading.set(false);
     this.success.set(res.ok);
   }
-  
+
 }
