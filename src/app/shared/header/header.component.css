@@ -111,16 +111,20 @@
          position: absolute;
          right: 50px;
          top: 50px;
+         color: rgb(194, 8, 8);
     }
 
     .menu-bar .enlaces ul li{
          display: block;
          padding: 20px 10px;
          text-align: center;
+         color: #f1eff6eb;
+
     }
 
     .menu-bar .enlaces ul li a,
     .menu-bar .sociales a{
          font-size: 20px;
+         color: #f1eff6eb;
     }
 }
