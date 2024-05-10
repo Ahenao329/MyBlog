@@ -1,9 +1,3 @@
-#certificados{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .certi{
     flex-grow: 1;
     overflow: hidden;
@@ -17,8 +11,28 @@
     left: 50%;
     transform: translateX(-50%);
 }
-
-.info-certi{
+#certificados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .certi {
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    cursor: pointer; 
+  }
+  
+  .imagen-certi {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .info-certi {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -28,24 +42,65 @@
     height: 100%;
     background: rgba(0, 33, 182, 0.2);
     transition: all 0.3s;
-}
-
-.info-certi p{
+  }
+  
+  .info-certi p {
     font-size: 28px;
     color: #fff;
     font-weight: 600;
     transition: all 0.3s;
-}
-
-.info-certi:hover{
+  }
+  
+  .info-certi:hover {
     background: rgba(0,0,0,0.25);
-}
-
-.info-certi:hover p{
+  }
+  
+  .info-certi:hover p {
     transform: translateY(10px);
-}
+  }
+  
+  .modal {
+    align-items: center;
+    align-content: center;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    overflow: auto;
+    
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    max-height: 800px;
+    min-height: 600px;
+    
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: rgb(252, 252, 252);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
 
-@media screen and (max-width: 1300px){
+  @media screen and (max-width: 1300px){
     #certificados {
         display: flex;
         justify-content: center;
@@ -67,4 +122,16 @@
         flex-basis: 100%;
         max-width: 100%;
     }
-}
+
+    .close {
+        top: 10px;
+        right: 25px;
+        color: rgb(6, 11, 147);
+    }
+
+    .modal-content {
+      width: 70%;
+      height: 80%;
+    }
+
+} 
