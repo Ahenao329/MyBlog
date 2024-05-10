@@ -1,13 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
-/* VARIABLES */
 :root{
-   /* --color-primario: #1b0aff; */
    --color-primario:#061353;
-   /* --color-secundario: #1b0aff; */
    --color-secundario: rgba(0, 33, 182, 0.991);
     --color-backgroud-sombra: #E92F3D30;
     --color-background: #f1eff65f;
-    --color-texto: #A1A5A6;
+    --color-texto: #000000;
     --text-defaul: 'Open Sans';
 }
 
