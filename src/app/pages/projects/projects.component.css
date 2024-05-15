@@ -71,7 +71,7 @@
     margin-top: 20px; 
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
     #proyectos {
         height: auto;
     }
@@ -85,16 +85,13 @@
     .imagen-central {
         margin: 5%;
     }
-}
-
-@media screen and (max-width: 650px) {
-    /* .imagen-central {
-        display: none;
-    } */
 
     .imagen-central .btn-input,
     .items .btn-input {
         top: 5%; 
     }
-    
+    .btn:hover{
+        padding: 10px 20px;
+     }
 }
+
