@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { log } from 'node:console';
 
 @Component({
   selector: 'app-likes',
@@ -6,7 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./likes.component.css']
 })
 export class LikesComponent {
+
+  certificados: { url: string, nombre: string }[] = [
+    { url: '../../../assets/img/tecnologo.jpg', nombre: 'ITM' },
+    { url: '../../../assets/img/certificado seguridad.jpg', nombre: 'Udemy' },
+    { url: '../../../assets/img/certificado-angular.jpg', nombre: 'Udemy' },
+    { url: '../../../assets/img/certificado-azure.jpg', nombre: 'Udemy' }
+  ];
+    
   openModal(imgSrc: string) {
+    
     const modal = document.getElementById('modal');
     const imgElement = document.getElementById('img01') as HTMLImageElement | null;
 
